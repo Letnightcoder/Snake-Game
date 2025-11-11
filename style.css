@@ -39,6 +39,7 @@ html {
 
 main, section {
     width: 100%;
+    height: 100%;
 }
 
 section {
@@ -65,8 +66,8 @@ section .infos {
     border: 1px solid var(--border-primary-color);
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 30px);
-    grid-template-rows: repeat(auto-fill, 30px);
+    grid-template-columns: repeat(auto-fill, minmax(30px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(30px,1fr));
 }
 
 .block {
